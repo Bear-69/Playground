@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,11 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            MyObject myObject = new MyObject();
-            MyObject myObject2 = new MyObject(10, 10);
+            MyLibrary.MyObject myObject = new MyLibrary.MyObject();
+            MySecondLibrary.MyObject myObject2 = new MySecondLibrary.MyObject(10, 10);
+
+            com.squareconnection.mylibrary.MyObject myobject3 = new com.squareconnection.mylibrary.MyObject();
+            
             myObject.Calculate(10, 10);
 
             //myObject.number1 = 10;
@@ -28,65 +32,5 @@ namespace Playground
         }
     }
 
-    class MyObject
-    {
-        public MyObject()
-        {
-            _number1 = 5;
-            _number2 = 5;
-        }
-
-        public MyObject(int number1, int number2)
-        {
-            _number1 = number1;
-            _number2 = number2;
-        }
-
-        int _number1 = 0;
-        int _number2 = 0;
-        int _number3 = 0;
-
-        public int number1 {
-            get
-            {
-                return _number1;
-            }
-            set
-            {
-                _number1 = value;
-            }
-        }
-        public int number2 {
-            get
-            {
-                return _number2;
-            }
-            set
-            {
-                _number2 = value;
-            }
-        }
-
-        public int number3
-        {
-            get
-            {
-                return number1 + number2;
-            }
-        }
-
-        public int Calculate(int number1, int number2)
-        {
-            return number1 + number2;
-        }
-
-        public int Calculate()
-        {
-            return _number1 + _number2;
-        }
-        public string MyMethod()
-        {
-            return "some value";
-        }
-    }
+    
 }
