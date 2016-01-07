@@ -12,31 +12,32 @@ namespace Playground
         static void Main(string[] args)
         {
             var customer = new MyLibrary.Customer();
+            customer.
 
-            int number1 = 10;
-            int number2 = 10;
+            //int number1 = 10;
+            //int number2 = 10;
 
-            Console.WriteLine("This is number 1: {0}.", number1);
-            Console.WriteLine("This is number 2: {0}.", number2);
-            Console.WriteLine("");
+            //Console.WriteLine("This is number 1: {0}.", number1);
+            //Console.WriteLine("This is number 2: {0}.", number2);
+            //Console.WriteLine("");
 
-            // Add Calculate Method
-            MyLibrary.ICalculate addfunction = new MyLibrary.AddCalculate();
-            var result = addfunction.PerformCal(number1, number2);
-            Console.WriteLine("Addition:  {0} + {1} = {2}", number1, number2, result);
-            Console.WriteLine("");
+            //// Add Calculate Method
+            //MyLibrary.ICalculate addfunction = new MyLibrary.AddCalculate();
+            //var result = addfunction.PerformCal(number1, number2);
+            //Console.WriteLine("Addition:  {0} + {1} = {2}", number1, number2, result);
+            //Console.WriteLine("");
 
-            // Subtract Calculate Method
-            MyLibrary.ICalculate subtractfunction = new MyLibrary.SubtractCalculate();
-            var subtractresult = subtractfunction.PerformCal(number1, number2);
-            Console.WriteLine("Subtraction: {0} - {1} = {2}", number1, number2, subtractresult);
-            Console.WriteLine("");
+            //// Subtract Calculate Method
+            //MyLibrary.ICalculate subtractfunction = new MyLibrary.SubtractCalculate();
+            //var subtractresult = subtractfunction.PerformCal(number1, number2);
+            //Console.WriteLine("Subtraction: {0} - {1} = {2}", number1, number2, subtractresult);
+            //Console.WriteLine("");
 
-            // Multiply Calculate Method
-            MyLibrary.ICalculate multiplyfunction = new MyLibrary.MultiplyCalculate();
-            var multiplyresult = multiplyfunction.PerformCal(number1, number2);
-            Console.WriteLine("Multiplication: {0} * {1} = {2}", number1, number2, multiplyresult);
-            Console.WriteLine("");
+            //// Multiply Calculate Method
+            //MyLibrary.ICalculate multiplyfunction = new MyLibrary.MultiplyCalculate();
+            //var multiplyresult = multiplyfunction.PerformCal(number1, number2);
+            //Console.WriteLine("Multiplication: {0} * {1} = {2}", number1, number2, multiplyresult);
+            //Console.WriteLine("");
 
 
             //MyLibrary.MyObject myObject = new MyLibrary.MyObject();

@@ -10,7 +10,7 @@ namespace MyLibrary
     {
         public string Name { get; set; }
 
-        public void UpdateName(string newName)
+        public virtual void UpdateName(string newName)
         {
             Name = newName;
         }
@@ -19,10 +19,24 @@ namespace MyLibrary
     {
         public int CustomerId { get; set; }
         
+        public override void UpdateName(string newName)
+        {
+            base.UpdateName(newName);
+            Name = "some other value";
+        }
     }
     
     public class Supplier : Person
     {
          public int SupplierId { get; set; }
+    }
+
+    public class otherclass
+    {
+        public void dosomething()
+        {
+            Customer customer = new Customer();
+            //customer.CustomerId;
+        }
     }
 }
